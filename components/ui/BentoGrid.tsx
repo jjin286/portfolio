@@ -1,8 +1,14 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import { div, span, style } from "framer-motion/client";
-import React from "react"
+import React, { useState } from "react"
 import { BackgroundGradientAnimation } from "@/components/ui/GradientBg";
 import  GridGlobe from "./GridGlobe";
+import animationData from "@/data/confetti.json";
+import Lottie from "react-lottie";
+import MagicButton from "./MagicButton";
+import { IoCopyOutline } from "react-icons/io5";
 
 export const BentoGrid = ({
   className,
@@ -42,6 +48,13 @@ export const BentoGridItem = ({
   spareImg?: string,
   id: number
 }) => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("j1jin286@gmail.com");
+
+    setCopied(true);
+  }
   return (
     <div
       className={cn(
@@ -53,7 +66,7 @@ export const BentoGridItem = ({
         backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%",
       }}
     >
-      <div className={`${id === 6} && 'flex justify-center h-full`}>
+      <div className={`${id === 6 && 'flex justify-center'} h-full`}>
         <div className="w-full h-full absolute">
             {img && (
                 <img
@@ -74,11 +87,10 @@ export const BentoGridItem = ({
         </div>
         {id === 6 && (
             <BackgroundGradientAnimation>
-                <div className="absolute z-50 flex items-center justify-center text-white font-bold">
-
-                </div>
+                  <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
             </BackgroundGradientAnimation>
         )}
+
 
         <div className={cn(
             titleClassName, `group-hover/
@@ -112,6 +124,27 @@ export const BentoGridItem = ({
                 ))
                 )}
             </div>
+          </div>
+        )}
+        {id === 6 && (
+          <div className="mt-5 relative">
+            <div className={`absolute -bottom-5 right-0`}>
+              <Lottie options={{
+                loop: copied,
+                autoplay: copied,
+                animationData,
+                rendererSettings: {
+                  preserveAspectRatio : 'xMidYMid slice',
+                }
+              }}/>
+            </div>
+            <MagicButton
+              title = {copied ? 'Email copied' : "Copy my email"}
+              icon={<IoCopyOutline />}
+              position="left"
+              otherClasses="!bg-[#161a31]"
+              handleClick={handleCopy}
+            />
           </div>
         )}
         {/* {id === 2 && <GridGlobe />} */}
