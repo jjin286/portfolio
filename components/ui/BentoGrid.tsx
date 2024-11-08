@@ -10,6 +10,16 @@ import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 
+/**
+ * Display Bento grid
+ *
+ * @param {object} props
+ * @param {string} props.className Any additional className
+ * @param {React.ReactNode} props.children
+ * @returns {JSX.Element}
+ *
+ * Hero -> BentoGrid
+ */
 export const BentoGrid = ({
   className,
   children,
@@ -29,6 +39,21 @@ export const BentoGrid = ({
   );
 };
 
+
+/**
+ * Display BentoGridItem
+ *
+ * @param {object} props
+ * @param {string} props.className Any additional className
+ * @param {string} props.title Title of BentoGridItem
+ * @param {string} props.description Descript of BentoGridItem
+ * @param {string} props.img Url of image
+ * @param {string} props.imgClassName Any additional className for image
+ * @param {string} props.spareImg Url of space image
+ * @param {number} props.id Id of BentoGridItem
+ *
+ * 
+ */
 export const BentoGridItem = ({
   className,
   title,
