@@ -6,9 +6,12 @@ import React, { useState } from "react"
 import { BackgroundGradientAnimation } from "@/components/ui/GradientBg";
 import  GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import dynamic from 'next/dynamic';
+
+const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
 /**
  * Display Bento grid
@@ -52,7 +55,7 @@ export const BentoGrid = ({
  * @param {string} props.spareImg Url of space image
  * @param {number} props.id Id of BentoGridItem
  *
- * 
+ *
  */
 export const BentoGridItem = ({
   className,
@@ -161,7 +164,10 @@ export const BentoGridItem = ({
                 rendererSettings: {
                   preserveAspectRatio : 'xMidYMid slice',
                 }
-              }}/>
+              }}
+                height={200}
+                width={400}
+              />
             </div>
             <MagicButton
               title = {copied ? 'Email copied' : "Copy my email"}
