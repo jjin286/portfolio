@@ -1,7 +1,6 @@
 import React from 'react'
 import { PinContainer } from "@/components/ui/3d-pin";
 import { projects } from "@/data/index";
-import { div } from 'framer-motion/client';
 import { FaLocationArrow } from 'react-icons/fa6';
 
 /**
