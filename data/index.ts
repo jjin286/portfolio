@@ -104,6 +104,151 @@ export const projects = [
   },
 ];
 
+export const techRight = [
+  {
+    id: 1,
+    name: "bootstrap",
+    img: "/Bootstrap.svg",
+    nameImg: "/bootstrapName.svg",
+  },
+  {
+    id: 2,
+    name: "django",
+    img: "/Django.svg",
+    nameImg: "/djangoName.svg",
+  },
+  {
+    id: 3,
+    name: "css3",
+    img: "/CSS3.svg",
+    nameImg: "/hostName.svg",
+  },
+  {
+    id: 4,
+    name: "express",
+    img: "/Express.svg",
+    nameImg: "/expressjsName.svg",
+  },
+  {
+    id: 5,
+    name: "flask",
+    img: "/Flask.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 6,
+    name: "html5.",
+    img: "/HTML5.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 7,
+    name: "jest",
+    img: "/Jest.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 8,
+    name: "javascript",
+    img: "/Javascript.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 9,
+    name: "jasmine",
+    img: "/Jasmine.svg",
+    nameImg: "/dockerName.svg",
+  },
+];
+
+export const techLeft = [
+  {
+    id: 10,
+    name: "next.js",
+    img: "/Next.js.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 11,
+    name: "node.js",
+    img: "/Node.js.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 12,
+    name: "postgressql",
+    img: "/PostgresSQL.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 13,
+    name: "python",
+    img: "/Python.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 14,
+    name: "react",
+    img: "/React.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 15,
+    name: "sequelize",
+    img: "/Sequelize.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 16,
+    name: "sqlalchemy",
+    img: "/SQLAlchemy.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 17,
+    name: "tailwind css",
+    img: "/Tailwind CSS.svg",
+    nameImg: "/dockerName.svg",
+  },
+  {
+    id: 18,
+    name: "typescript",
+    img: "/TypeScript.svg",
+    nameImg: "/dockerName.svg",
+  },
+];
+
+export const workExperience = [
+  {
+    id: 1,
+    title: "Frontend Engineer Intern",
+    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: 2,
+    title: "Mobile App Dev - JSM Tech",
+    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 3,
+    title: "Freelance App Dev Project",
+    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp3.svg",
+  },
+  {
+    id: 4,
+    title: "Lead Frontend Developer",
+    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
+];
+
 export const socialMedia = [
   {
     id: 1,
