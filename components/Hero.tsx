@@ -13,7 +13,7 @@ import { FaLocationArrow } from "react-icons/fa6";
  */
 const Hero = () => {
   return (
-    <div className='pb-20 pt-36 h-screen flex items-center'>
+    <div className='pb-20 pt-36 h-screen flex justify-center items-center'>
         <div>
             <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white'/>
             <Spotlight className='top-10 left-full h-[80vh] w-[50vw]' fill='purple'/>

@@ -96,18 +96,28 @@ export const InfiniteMovingCards = ({
               }}
               key={items.id}>
               <div aria-hidden="true" className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"/>
-              <div className="flex md:max-w-60 max-w-32 gap-2">
+              <div className="flex justify-center items-center md:max-w-60 max-w-32 gap-2">
                 <img
                   src={items.img}
                   alt={items.name}
                   className="md:w-10 w-5"
                 />
-                <img
-                  src={items.nameImg}
-                  alt={items.name}
-                  width={items.id === 4 || items.id === 5 ? 100 : 150}
-                  className="md:w-24 w-20"
-                />
+                {items.nameImg.endsWith('.svg')
+                  ? (
+                    <img
+                      src={items.nameImg}
+                      alt={items.name}
+                      width={items.id === 4 || items.id === 5 ? 100 : 150}
+                      className="md:w-24 w-20"
+                    />
+                  )
+                  : (
+                    <p>
+                      {items.nameImg}
+                    </p>
+                  )
+                }
+
               </div>
             </li>
           ))}
