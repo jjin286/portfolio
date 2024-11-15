@@ -75,7 +75,7 @@ export const projects = [
     title: "Jobly - Online Job board",
     des: "Search for your next job opportunity with Jobly. Make finding a perfect match smooth for employees and employers alike.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/re.svg", "Express.svg", "Bootstrap.svg", "/Javascript.svg","/PostgresSQL.svg"],
     link: "https://jobly-pobq.onrender.com",
   },
   {
@@ -83,7 +83,7 @@ export const projects = [
     title: "Warbler - Social Media Platform",
     des: "Connect with your friends with Warbler. Keep in touch and meet new people with a click of a button.",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/re.svg", "/Flask.svg", "Bootstrap.svg", "/Javascript.svg", "/Python.svg", "/PostgresSQL.svg"],
     link: "https://warbler-bxs4.onrender.com",
   },
   {
@@ -91,7 +91,7 @@ export const projects = [
     title: "ShareBnB - Online Marketplace for rent",
     des: "Plan your next trip with ShareBnb. Find your perfect booking from a variety of listings.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: ["/re.svg", "Express.svg", "Bootstrap.svg", "/Javascript.svg","/PostgresSQL.svg", "/Sequelize.svg", "/amazon-s3.svg"],
     link: "https://github.com/adrianhajdin/ai_saas_app",
   },
   {
