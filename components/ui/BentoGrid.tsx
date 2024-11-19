@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { div, span, style } from "framer-motion/client";
 import React, { useState } from "react"
 import { BackgroundGradientAnimation } from "@/components/ui/GradientBg";
-import  GridGlobe from "./GridGlobe";
+import { SparklesCore } from "./sparkles";
 import animationData from "@/data/confetti.json";
 // import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
@@ -83,7 +83,6 @@ export const BentoGridItem = ({
 
     setCopied(true);
   }
-  
   return (
     <div
       className={cn(
@@ -95,7 +94,7 @@ export const BentoGridItem = ({
         backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%",
       }}
     >
-      <div className={`${id === 6 && 'flex justify-center'} h-full`}>
+      <div className={`${id === 6 && 'flex justify-center items-center'} h-full`}>
         <div className="w-full h-full absolute">
             {img && (
                 <img
@@ -125,11 +124,34 @@ export const BentoGridItem = ({
             titleClassName, `group-hover/
             bento: translate-x-2 transition duration-200 relative md;h-full min-h-40 flex flex-col px-5 p-5 lg:p-10`
         )}>
-            <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10 ">
-                {description}
+          {id === 2 &&
+          (
+            <div className="h-full w-full flex flex-col items-center justify-center">
+              <div className="w-[40rem] h-40 relative">
+
+                <div className="absolute inset-x-20 bottom-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+                <div className="absolute inset-x-20 bottom-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+                <div className="absolute inset-x-60 bottom-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+                <div className="absolute inset-x-60 bottom-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+
+                <SparklesCore
+                  background="transparent"
+                  minSize={0.4}
+                  maxSize={1}
+                  particleDensity={1200}
+                  className="w-full h-full"
+                  particleColor="#FFFFFF"
+                />
+
+                <div className="absolute inset-0 w-full h-full [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+              </div>
             </div>
+        )}
             <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
                 {title}
+            </div>
+            <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10 ">
+                {description}
             </div>
         {id === 3 && (
           <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
@@ -179,7 +201,29 @@ export const BentoGridItem = ({
             />
           </div>
         )}
-        {/* {id === 2 && <GridGlobe />} */}
+        {id === 2 &&
+          (
+            <div className="h-full w-full flex flex-col items-center justify-center">
+              <div className="w-[40rem] h-40 relative">
+
+                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+                <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+                <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+                <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
+
+                <SparklesCore
+                  background="transparent"
+                  minSize={0.4}
+                  maxSize={1}
+                  particleDensity={1200}
+                  className="w-full h-full"
+                  particleColor="#FFFFFF"
+                />
+
+                <div className="absolute inset-0 w-full h-full [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+              </div>
+            </div>
+        )}
       </div>
     </div>
         </div>
