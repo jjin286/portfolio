@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Technologies", link: "#tech" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -22,7 +22,7 @@ export const gridItems = [
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
-    titleClassName: "justify-center text-center",
+    titleClassName: "justify-center text-center py-10",
     img: "",
     spareImg: "",
   },

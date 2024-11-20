@@ -21,11 +21,13 @@ const Tech = () => {
             items={techRight}
             direction="right"
             speed="slow"
+            pauseOnHover= {false}
           />
           <InfiniteMovingCards
             items={techLeft}
             direction="left"
             speed="slow"
+            pauseOnHover= {false}
           />
         </div>
       </div>

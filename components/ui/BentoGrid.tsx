@@ -127,7 +127,7 @@ export const BentoGridItem = ({
           {id === 2 &&
           (
             <div className="h-full w-full flex flex-col items-center justify-center">
-              <div className="w-[40rem] h-40 relative">
+              <div className="w-[40rem] h-40 relative mb-5 -mt-10">
 
                 <div className="absolute inset-x-20 bottom-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
                 <div className="absolute inset-x-20 bottom-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
@@ -203,8 +203,8 @@ export const BentoGridItem = ({
         )}
         {id === 2 &&
           (
-            <div className="h-full w-full flex flex-col items-center justify-center">
-              <div className="w-[40rem] h-40 relative">
+            <div className="h-full w-full flex flex-col items-center justify-center ">
+              <div className="w-[40rem] h-40 relative mt-5 -mb-44">
 
                 <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
                 <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
