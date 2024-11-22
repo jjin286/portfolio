@@ -90,7 +90,7 @@ export const projects = [
     id: 3,
     title: "ShareBnB - Online Marketplace for rent",
     des: "Plan your next trip with ShareBnb. Find your perfect booking from a variety of listings.",
-    img: "/p3.svg",
+    img: "/sharebnb.PNG",
     iconLists: ["/re.svg", "Express.svg", "Bootstrap.svg", "/Javascript.svg","/PostgresSQL.svg", "/Sequelize.svg", "/amazon-s3.svg"],
     link: "https://github.com/adrianhajdin/ai_saas_app",
   },
