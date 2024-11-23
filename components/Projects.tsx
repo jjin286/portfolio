@@ -27,7 +27,7 @@ const Projects = () => {
                             <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]'>
                                 <img src='/bg.png' alt='bg-img'/>
                             </div>
-                            <img src={img} alt={title} className='z-10 absolute bottom-0'/>
+                            <img src={img} alt={title} className='z-10 absolute -bottom-28 w-3/5 rounded-xl rotate-[15deg]'/>
                         </div>
                         <h1 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1'>
                             {title}
