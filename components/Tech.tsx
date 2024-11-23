@@ -15,20 +15,24 @@ const Tech = () => {
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
-        <div >
-        {/* <div className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden"> */}
-          <InfiniteMovingCards
-            items={techRight}
-            direction="right"
-            speed="slow"
-            pauseOnHover= {false}
-          />
-          <InfiniteMovingCards
-            items={techLeft}
-            direction="left"
-            speed="slow"
-            pauseOnHover= {false}
-          />
+        {/* <div > */}
+        <div className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden">
+          <div className="h-1/2">
+            <InfiniteMovingCards
+              items={techRight}
+              direction="right"
+              speed="slow"
+              pauseOnHover= {false}
+              />
+          </div>
+          <div className="h-1/2">
+            <InfiniteMovingCards
+              items={techLeft}
+              direction="left"
+              speed="slow"
+              pauseOnHover= {false}
+              />
+          </div>
         </div>
       </div>
     </section>

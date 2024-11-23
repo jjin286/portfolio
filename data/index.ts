@@ -158,6 +158,7 @@ export const techLeft = [
     id: 10,
     name: "next.js",
     img: "/Next.js.svg",
+    // nameImg: "",
     nameImg: "/next.jsName.svg",
   },
   {
