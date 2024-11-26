@@ -11,8 +11,8 @@ const Footer = () => {
             <img src="/footer-grid.svg" alt="grid" className='w-full h-full opacity-50'/>
         </div>
         <div className='flex flex-col items-center'>
-            <h1 className='heading lg:max-w-[45vw]'>Ready to take <span className='text-purple'>your</span> digital presence to the next level</h1>
-            <p className='text-white-200 md:mt-10 my-5 text-center'>Reach out to me today and let's discuss how I can help you achieve your goals.</p>
+            <h1 className='heading lg:max-w-[45vw]'>Have any <span className='text-purple'>thoughts</span> or <span className='text-purple'>questions</span>?</h1>
+            <p className='text-white-200 md:mt-10 my-5 text-center'>Feel free to reach out to me through email in the button below.</p>
             <a href="mailto:j1jin286@gmail.com">
                 <MagicButton
                     title="Let's get in touch"
