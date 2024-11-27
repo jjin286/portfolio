@@ -10,6 +10,7 @@ import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import dynamic from 'next/dynamic';
+import { FlipWords } from "@/components/ui/flip-words"
 
 const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
@@ -77,6 +78,7 @@ export const BentoGridItem = ({
   id: number
 }) => {
   const [copied, setCopied] = useState(false);
+  const flipWords = ["development", "learning", "coding", "creating", "innovating", "solving"]
 
   const handleCopy = () => {
     navigator.clipboard.writeText("j1jin286@gmail.com");
@@ -149,6 +151,7 @@ export const BentoGridItem = ({
         )}
             <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
                 {title}
+                {id === 4 && <FlipWords words={flipWords}/>}
             </div>
             <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10 ">
                 {description}
