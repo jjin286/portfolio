@@ -11,7 +11,7 @@ import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import dynamic from 'next/dynamic';
 import { FlipWords } from "@/components/ui/flip-words"
-
+import { GlowingStarsBackgroundCard, GlowingStarsDescription, GlowingStarsTitle, } from "@/components/ui/glowing-stars"
 const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
 /**
@@ -97,6 +97,11 @@ export const BentoGridItem = ({
       }}
     >
       <div className={`${id === 6 && 'flex justify-center items-center'} h-full`}>
+        {id === 1 && (
+          <div className="flex items-center justify-center antialiased absolute h-full w-full top-0 bottom-0">
+            <GlowingStarsBackgroundCard/>
+          </div>
+        )}
         <div className="w-full h-full absolute">
             {img && (
                 <img
@@ -124,7 +129,7 @@ export const BentoGridItem = ({
 
         <div className={cn(
             titleClassName, `group-hover/
-            bento: translate-x-2 transition duration-200 relative md;h-full min-h-40 flex flex-col px-5 p-5 lg:p-10`
+            bento: translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10`
         )}>
           {id === 2 &&
           (
@@ -207,7 +212,7 @@ export const BentoGridItem = ({
         {id === 2 &&
           (
             <div className="h-full w-full flex flex-col items-center justify-center ">
-              <div className="w-[40rem] h-40 relative mt-5 -mb-44">
+              <div className="w-[40rem] h-40 relative mt-5 -mb-12">
 
                 <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
                 <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
