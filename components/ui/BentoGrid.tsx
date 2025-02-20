@@ -1,17 +1,16 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { div, span, style } from "framer-motion/client";
 import React, { useState } from "react"
 import { BackgroundGradientAnimation } from "@/components/ui/GradientBg";
 import { SparklesCore } from "./sparkles";
 import animationData from "@/data/confetti.json";
-// import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import dynamic from 'next/dynamic';
 import { FlipWords } from "@/components/ui/flip-words"
-import { GlowingStarsBackgroundCard, GlowingStarsDescription, GlowingStarsTitle, } from "@/components/ui/glowing-stars"
+import { GlowingStarsBackgroundCard } from "@/components/ui/glowing-stars"
+
 const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
 /**
