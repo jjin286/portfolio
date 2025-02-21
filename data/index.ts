@@ -76,7 +76,7 @@ export const projects = [
     des: "Search for your next job opportunity with Jobly. Make finding a perfect match smooth for employees and employers alike.",
     img: "/jobly.PNG",
     iconLists: ["/re.svg", "Express.svg", "Bootstrap.svg", "/Javascript.svg","/PostgresSQL.svg"],
-    link: "https://jobly-pobq.onrender.com",
+    link: "https://react-jobly-wvgv.onrender.com",
   },
   {
     id: 2,
@@ -92,7 +92,7 @@ export const projects = [
     des: "Plan your next trip with ShareBnb. Find your perfect booking from a variety of listings.",
     img: "/sharebnb.PNG",
     iconLists: ["/re.svg", "Express.svg", "Bootstrap.svg", "/Javascript.svg","/PostgresSQL.svg", "/Sequelize.svg", "/amazon-s3.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    link: "https://react-sharebnb.onrender.com",
   },
 ];
 
