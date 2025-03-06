@@ -77,6 +77,8 @@ export const BentoGridItem = ({
   id: number
 }) => {
   const [copied, setCopied] = useState(false);
+  const [opened, setOpened] = useState(false);
+
   const flipWords = ["development", "learning", "coding", "creating", "innovating", "solving"]
 
   const handleCopy = () => {
@@ -84,6 +86,14 @@ export const BentoGridItem = ({
 
     setCopied(true);
   }
+
+  const handleOpen = () => {
+    let fileName = 'Jaewon Jin Resume.pdf';
+    window.open(`${fileName}`)
+
+    setOpened(true);
+  }
+
   return (
     <div
       className={cn(
@@ -205,6 +215,13 @@ export const BentoGridItem = ({
               position="left"
               otherClasses="!bg-[#161a31]"
               handleClick={handleCopy}
+            />
+            <MagicButton
+              title = {opened ? 'CV Opened' : "Open CV"}
+              icon={<IoCopyOutline />}
+              position="left"
+              otherClasses="!bg-[#161a31]"
+              handleClick={handleOpen}
             />
           </div>
         )}
