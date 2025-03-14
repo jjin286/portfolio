@@ -88,7 +88,7 @@ export const BentoGridItem = ({
   }
 
   const handleOpen = () => {
-    const fileName = 'Jaewon Jin Resume.pdf';
+    const fileName = '/public/Jaewon Jin Resume.pdf';
     window.open(`${fileName}`)
 
     setOpened(true);
