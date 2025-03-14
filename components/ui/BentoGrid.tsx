@@ -10,6 +10,7 @@ import { IoCopyOutline } from "react-icons/io5";
 import dynamic from 'next/dynamic';
 import { FlipWords } from "@/components/ui/flip-words"
 import { GlowingStarsBackgroundCard } from "@/components/ui/glowing-stars"
+import Image from "next/image";
 
 const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
@@ -105,27 +106,28 @@ export const BentoGridItem = ({
         backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%",
       }}
     >
-      <div className={`${id === 6 && 'flex justify-center items-center'} h-full`}>
+      <div className={`${id === 6 && 'flex justify-center items-center'} ${id === 1 && 'flex justify-center items-start h-[60vh]'} md:h-full `}>
         {id === 1 && (
-          <div className="flex items-center justify-center antialiased absolute h-full w-full top-0 bottom-0">
+          <div className="flex items-center justify-center antialiased absolute h-full w-full top-0 bottom-0 ">
             <GlowingStarsBackgroundCard/>
+
           </div>
         )}
-        <div className="w-full h-full absolute">
-            {img && (
-                <img
-                    src={img}
-                    alt={img}
-                    className={cn(imgClassName, 'object-cover, object-center')}
-                />
-            )}
+        <div className="h-full md:w-full w-3/4 absolute ">
+          {img && (
+              <img
+                  src={img}
+                  alt={img}
+                  className={cn(imgClassName, 'object-cover object-center mt-24')}
+              />
+          )}
         </div>
         <div className={`absolute right-0 -bottom-5 ${id === 5 && 'w-full opacity-80'}`}>
             {spareImg && (
                 <img
                     src={spareImg}
                     alt={spareImg}
-                    className={'object-cover, object-center w-full h-full'}
+                    className={'object-cover object-center w-full h-full'}
                 />
             )}
         </div>

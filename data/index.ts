@@ -11,7 +11,7 @@ export const gridItems = [
     title: "Hi, my name's JaeWon!",
     description: "Fullstack Developer based in California",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] z-30",
-    imgClassName: "rounded-full aspect-square object-cover w-3/4 mx-auto bottom-12 left-0 right-0 absolute z-30",
+    imgClassName: "rounded-full aspect-square object-cover md:w-3/4 mx-auto md:bottom-12 left-0 right-0 absolute z-30",
     titleClassName: "items-center z-30",
     img: "/jaewon.jpg",
     spareImg: "",
@@ -215,13 +215,11 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/jjin286"
   },
   {
     id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/jaewon-jin/"
   },
 ];

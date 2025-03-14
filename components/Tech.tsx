@@ -17,20 +17,22 @@ const Tech = () => {
       <div className="flex flex-col items-center max-lg:mt-10">
         {/* <div > */}
         <div className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden">
-          <div className="h-1/2">
+          <div>
             <InfiniteMovingCards
               items={techRight}
               direction="right"
               speed="slow"
               pauseOnHover= {false}
+              className="md:h-full"
               />
           </div>
-          <div className="h-1/2">
+          <div>
             <InfiniteMovingCards
               items={techLeft}
               direction="left"
               speed="slow"
               pauseOnHover= {false}
+              className="md:h-full"
               />
           </div>
         </div>
