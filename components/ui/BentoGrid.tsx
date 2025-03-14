@@ -10,7 +10,7 @@ import { IoCopyOutline } from "react-icons/io5";
 import dynamic from 'next/dynamic';
 import { FlipWords } from "@/components/ui/flip-words"
 import { GlowingStarsBackgroundCard } from "@/components/ui/glowing-stars"
-import Image from "next/image";
+
 
 const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
