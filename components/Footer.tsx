@@ -6,11 +6,8 @@ import { socialMedia } from  "@/data/index"
 
 const Footer = () => {
   return (
-    <footer className='w-full pt-20 pb-10' id='contact'>
-        {/* <div className='w-full min-h-96'>
-            <img src="/footer-grid.svg" alt="grid" className='w-full h-full opacity-50'/>
-        </div> */}
-        <div className='flex flex-col items-center'>
+    <footer className='w-full pt-20 pb-10 bg-[url(/footer-grid.svg)]' id='contact'>
+        <div className='flex flex-col items-center' >
             <h1 className='heading lg:max-w-[45vw]'>Have any <span className='text-purple'>thoughts</span> or <span className='text-purple'>questions</span>?</h1>
             <p className='text-white-200 md:mt-10 my-5 text-center'>Feel free to reach out to me through email in the button below.</p>
             <a href="mailto:j1jin286@gmail.com">
