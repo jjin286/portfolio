@@ -92,7 +92,7 @@ export const projects = [
     des: "Plan your next trip with ShareBnb. Find your perfect booking from a variety of listings.",
     img: "/sharebnb.PNG",
     iconLists: ["/re.svg", "Express.svg", "Bootstrap.svg", "/Javascript.svg","/PostgresSQL.svg", "/Sequelize.svg", "/amazon-s3.svg"],
-    link: "https://react-sharebnb.onrender.com",
+    link: "https://react-sharebnb.onrender.com/listing",
   },
 ];
 
